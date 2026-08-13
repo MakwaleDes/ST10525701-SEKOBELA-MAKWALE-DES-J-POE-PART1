@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry | Des-Lux Play</title>
+    <link rel ="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="images/logo.png" alt="Des-Lux Play logo" width="500" height="150">
+            <h1>Des-Lux Play</h1>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="products.html">PRODUCTS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="enquiry.html">ENQUIRY</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div>
+            <input type="search" placeholder="Search...">
+            <button type="button">Search</button>
+        </div>
+    </nav>
+
+    <div>
+
+        <main>
+            <section>
+                <h2>Custom Order Enquiry</h2>
+                <p>Ready to create your dream stuffed toy? Fill out the form below and we will get back to you with a quote and timeline.</p>
+            </section>
+
+            <section>
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" id="enquiryForm">
+                    
+                    <fieldset>
+                        <legend>Your Details</legend>
+                        
+                        <label for="enq-name">Full Name:</label>
+                        <input type="text" id="enq-name" name="full_name" required minlength="2" placeholder="e.g. Jane Doe">
+                        
+                        <label for="enq-email">Email Address:</label>
+                        <input type="email" id="enq-email" name="email" required placeholder="jane@example.com">
+                        
+                        <label for="enq-phone">Phone Number:</label>
+                        <input type="tel" id="enq-phone" name="phone" required placeholder="082 123 4567">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Toy Specifications</legend>
+                        
+                        <label for="enq-type">Toy Type:</label>
+                        <select id="enq-type" name="toy_type" required>
+                            <option value="">-- Select a type --</option>
+                            <option value="bear">Bear</option>
+                            <option value="bunny">Bunny</option>
+                            <option value="unicorn">Unicorn</option>
+                            <option value="dragon">Dragon</option>
+                            <option value="other">Other (specify below)</option>
+                        </select>
+                        
+                        <label for="enq-size">Size:</label>
+                        <select id="enq-size" name="size" required>
+                            <option value="">-- Select a size --</option>
+                            <option value="small">Small (15cm)</option>
+                            <option value="medium">Medium (30cm)</option>
+                            <option value="large">Large (50cm)</option>
+                            <option value="xlarge">Extra Large (75cm)</option>
+                        </select>
+                        
+                        <label for="enq-colour">Preferred Colour(s):</label>
+                        <input type="text" id="enq-colour" name="colours" placeholder="e.g. Royal blue and silver">
+                        
+                        <label for="enq-budget">Budget Range (ZAR):</label>
+                        <select id="enq-budget" name="budget" required>
+                            <option value="">-- Select budget --</option>
+                            <option value="300-500">R300 – R500</option>
+                            <option value="500-800">R500 – R800</option>
+                            <option value="800-1200">R800 – R1,200</option>
+                            <option value="1200+">R1,200+</option>
+                        </select>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Personalization</legend>
+                        
+                        <label for="enq-message">Describe your dream toy:</label>
+                        <textarea id="enq-message" name="message" rows="5" placeholder="Tell us about the design, embroidery, accessories, or any special requests..."></textarea>
+                        
+                        <label for="enq-file">Upload Reference Image (optional):</label>
+                        <input type="file" id="enq-file" name="reference_image" accept="image/*">
+                    </fieldset>
+
+                    <button type="submit">Submit Enquiry</button>
+                </form>
+            </section>
+        </main>
+
+        <aside>
+            <div>
+                <h4>Custom Order Info</h4>
+                <p>Turnaround: 7–14 business days</p>
+                <p>Deposit: 50% required to confirm</p>
+                <p>Delivery: Nationwide via courier</p>
+            </div>
+
+            <div>
+                <h4>Popular Choices</h4>
+                <ul>
+                    <li>Unicorns with name embroidery</li>
+                    <li>Memory bears from old clothing</li>
+                    <li>Corporate branded mascots</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Need Help?</h4>
+                <p>WhatsApp us: <a href="https://wa.me/27123456789" target="_self">012 345 6789</a></p>
+                <p>Email: <a href="mailto:info@desluxplay.co.za">info@desluxplay.co.za</a></p>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Des-Lux Play. All rights reserved.</p>
+        <p>Burgersfort, Limpopo, South Africa | Where Luxury Meets Imagination</p>
+    </footer>
+
+</body>
+</html>
